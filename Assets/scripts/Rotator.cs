@@ -20,21 +20,21 @@ public class Rotator : MonoBehaviour
     public Transform sun;
     public Transform galexy ;
     
-    private bool earthMoon1Target;
-    private bool earthMoon2Target;
-    private bool earthMoon3Target;
-    private bool mecuryMoonTarget;
-    private bool juiptiorMoon1Target;
-    private bool juiptiorMoon2Target;
-    private bool juiptiorMoon3Target;
-    private bool marsMoonTarget;
-    private bool mercuryTarget;
-    private bool juiptiorTarget;
-    private bool venusTarget;
-    private bool marsTarget;
-    private bool earthTarget;
-    private bool sunTarget;
-    private bool galexyTarget = true;
+    public static bool earthMoon1Target;
+    public static bool earthMoon2Target;
+    public static bool earthMoon3Target;
+    public static bool mecuryMoonTarget;
+    public static bool juiptiorMoon1Target;
+    public static bool juiptiorMoon2Target;
+    public static bool juiptiorMoon3Target;
+    public static bool marsMoonTarget;
+    public static bool mercuryTarget;
+    public static bool juiptiorTarget;
+    public static bool venusTarget;
+    public static bool marsTarget;
+    public static bool earthTarget;
+    public static bool sunTarget;
+    public static bool galexyTarget = true;
     float yaw = 0;
     // Update is called once per frame
     void Update()
