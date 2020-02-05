@@ -9,6 +9,7 @@ public class Orbit : MonoBehaviour
     public LineRenderer orbitPath;
     [Range(1, 500)] public float radius = 6;
     [Range(4, 32)] public int resolution = 8;
+    public float planetSpeed = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Orbit : MonoBehaviour
     void Update()
     {
 
-        Vector3 pos = FindOrbitPoint(UinverseTime.worldTime, radius);
+        Vector3 pos = FindOrbitPoint(planetSpeed* UinverseTime.worldTime, radius);
         transform.position = pos;
         UpdatePoints();
     }
