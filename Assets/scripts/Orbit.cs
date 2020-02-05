@@ -10,6 +10,7 @@ public class Orbit : MonoBehaviour
     [Range(1, 500)] public float radius = 6;
     [Range(4, 32)] public int resolution = 8;
     public float planetSpeed = 1;
+    
     // Start is called before the first frame update
     void Start()
     {
