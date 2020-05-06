@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Rotator : MonoBehaviour
 {
@@ -19,7 +20,27 @@ public class Rotator : MonoBehaviour
     public Transform earth;
     public Transform sun;
     public Transform galexy ;
-    
+    public Transform saturn;
+    public Transform uranus;
+    public Transform neptune;
+
+
+    public RawImage mercuryFact;
+    public RawImage venusFact;
+    public RawImage earthFact;
+    public RawImage marsFact;
+    public RawImage jupiterFact;
+    public RawImage saturnFact;
+    public RawImage uranusFact;
+    public RawImage neptuneFact;
+
+
+
+
+
+    public static bool saturnTarget;
+    public static bool uranusTarget;
+    public static bool neptuneTarget;
     public static bool earthMoon1Target;
     public static bool earthMoon2Target;
     public static bool earthMoon3Target;
@@ -42,62 +63,13 @@ public class Rotator : MonoBehaviour
         CurrentCameraTarget();
     }
 
-    public void EarthMoon1Target()
-    {
-     earthMoon1Target = true;
-     earthMoon2Target = false;
-     earthMoon3Target = false;
-     mecuryMoonTarget = false;
-     juiptiorMoon1Target = false;
-     juiptiorMoon2Target = false;
-     juiptiorMoon3Target = false;
-     marsMoonTarget = false;
-     mercuryTarget = false;
-     juiptiorTarget = false;
-     venusTarget = false;
-     marsTarget = false;
-     earthTarget = false;
-     sunTarget = false;
-     galexyTarget = false;
-}
-    public void EarthMoon2Target()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = true;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
-    public void EarthMoon3Target()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = true;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
+    
+    
     public void EarthTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget= false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -114,98 +86,16 @@ public class Rotator : MonoBehaviour
         sunTarget = false;
         galexyTarget = false;
     }
-    public void MecuryMoonTarget()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = true;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
-    public void JuiptiorMoon1Target()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = true;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
-    public void JuiptiorMoon2Target()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = true;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
-    public void JuiptiorMoon3Target()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = true;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
-    public void MarsMoonTarget()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = true;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = false;
-        sunTarget = false;
-        galexyTarget = false;
-    }
+   
+    
+  
+  
+  
     public void MercuryTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -224,6 +114,9 @@ public class Rotator : MonoBehaviour
     }
     public void JuiptiorTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -242,6 +135,9 @@ public class Rotator : MonoBehaviour
     }
     public void VenusTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -261,6 +157,9 @@ public class Rotator : MonoBehaviour
 
     public void MarsTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -277,26 +176,12 @@ public class Rotator : MonoBehaviour
         sunTarget = false;
         galexyTarget = false;
     }
-    public void SunTarget()
-    {
-        earthMoon1Target = false;
-        earthMoon2Target = false;
-        earthMoon3Target = false;
-        mecuryMoonTarget = false;
-        juiptiorMoon1Target = false;
-        juiptiorMoon2Target = false;
-        juiptiorMoon3Target = false;
-        marsMoonTarget = false;
-        mercuryTarget = false;
-        juiptiorTarget = false;
-        venusTarget = false;
-        marsTarget = false;
-        earthTarget = true;
-        sunTarget = true;
-        galexyTarget = false;
-    }
+
     public void GalexyTarget()
     {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = false;
         earthMoon1Target = false;
         earthMoon2Target = false;
         earthMoon3Target = false;
@@ -313,32 +198,72 @@ public class Rotator : MonoBehaviour
         sunTarget = false;
         galexyTarget = true;
     }
+    public void SaturnTarget()
+    {
+        saturnTarget = true;
+        uranusTarget = false;
+        neptuneTarget = false;
+        earthMoon1Target = false;
+        earthMoon2Target = false;
+        earthMoon3Target = false;
+        mecuryMoonTarget = false;
+        juiptiorMoon1Target = false;
+        juiptiorMoon2Target = false;
+        juiptiorMoon3Target = false;
+        marsMoonTarget = false;
+        mercuryTarget = false;
+        juiptiorTarget = false;
+        venusTarget = false;
+        marsTarget = false;
+        earthTarget = false;
+        sunTarget = false;
+        galexyTarget = false;
+    }
+    public void UranusTarget()
+    {
+        saturnTarget = false;
+        uranusTarget = true;
+        neptuneTarget = false;
+        earthMoon1Target = false;
+        earthMoon2Target = false;
+        earthMoon3Target = false;
+        mecuryMoonTarget = false;
+        juiptiorMoon1Target = false;
+        juiptiorMoon2Target = false;
+        juiptiorMoon3Target = false;
+        marsMoonTarget = false;
+        mercuryTarget = false;
+        juiptiorTarget = false;
+        venusTarget = false;
+        marsTarget = false;
+        earthTarget = false;
+        sunTarget = false;
+        galexyTarget = false;
+    }
+    public void NeptuneTarget()
+    {
+        saturnTarget = false;
+        uranusTarget = false;
+        neptuneTarget = true;
+        earthMoon1Target = false;
+        earthMoon2Target = false;
+        earthMoon3Target = false;
+        mecuryMoonTarget = false;
+        juiptiorMoon1Target = false;
+        juiptiorMoon2Target = false;
+        juiptiorMoon3Target = false;
+        marsMoonTarget = false;
+        mercuryTarget = false;
+        juiptiorTarget = false;
+        venusTarget = false;
+        marsTarget = false;
+        earthTarget = false;
+        sunTarget = false;
+        galexyTarget = false;
+    }
     private void CurrentCameraTarget()
     {
-        if (earthMoon1Target == true)
-        {
-            Vector3 vectorToTarget = earthMoon1.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
-        if (earthMoon2Target == true)
-        {
-            Vector3 vectorToTarget = earthMoon2.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
-        if (earthMoon3Target == true)
-        {
-            Vector3 vectorToTarget = earthMoon3.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
+        
         if (earthTarget == true)
         {
             Vector3 vectorToTarget = earth.position - transform.position;
@@ -363,39 +288,7 @@ public class Rotator : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
             // Quaternion.FromToRotation()
         }
-        if (juiptiorMoon1Target == true)
-        {
-            Vector3 vectorToTarget = juiptiorMoon1.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
-        if (juiptiorMoon2Target == true)
-        {
-            Vector3 vectorToTarget = juiptiorMoon2.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
-        if (juiptiorMoon2Target == true)
-        {
-            Vector3 vectorToTarget = juiptiorMoon3.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
-
-        if (mecuryMoonTarget == true)
-        {
-            Vector3 vectorToTarget = mecuryMoon.position - transform.position;
-            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
-            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
-            // Quaternion.FromToRotation()
-        }
+        
         if (mercuryTarget == true)
         {
             Vector3 vectorToTarget = mercury.position - transform.position;
@@ -430,17 +323,34 @@ public class Rotator : MonoBehaviour
             // Quaternion.FromToRotation()
         }
 
-        if (sunTarget == true)
+       
+        if (galexyTarget == true)
         {
-            Vector3 vectorToTarget = sun.position - transform.position;
+            Vector3 vectorToTarget = galexy.position - transform.position;
             yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
             Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
             // Quaternion.FromToRotation()
         }
-        if (galexyTarget == true)
+        if (saturnTarget == true)
         {
-            Vector3 vectorToTarget = galexy.position - transform.position;
+            Vector3 vectorToTarget = saturn.position - transform.position;
+            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
+            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
+            // Quaternion.FromToRotation()
+        }
+        if (uranusTarget == true)
+        {
+            Vector3 vectorToTarget = uranus.position - transform.position;
+            yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
+            Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);
+            // Quaternion.FromToRotation()
+        }
+        if (neptuneTarget == true)
+        {
+            Vector3 vectorToTarget = neptune.position - transform.position;
             yaw = Mathf.Atan2(vectorToTarget.x, vectorToTarget.z);
             Quaternion desiredRotation = Quaternion.LookRotation(vectorToTarget);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, 90 * Time.deltaTime);

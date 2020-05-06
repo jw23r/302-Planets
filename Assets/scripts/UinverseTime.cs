@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class UinverseTime : MonoBehaviour
 {
-    public bool normal = true;
-    public bool fastFoward;
-    public bool rewind;
+    static public bool normal = true;
+    static public bool fastFoward;
+    static public bool rewind;
     public static float worldTime;
+    static bool stoptime;
     int rewindspeed = 1;
     int fastfowardspeed = 1;
 
@@ -29,6 +30,7 @@ public class UinverseTime : MonoBehaviour
        if(normal == true) worldTime += Time.deltaTime;
         if (fastFoward == true) worldTime += (fastfowardspeed * Time.deltaTime);
         if (rewind == true) worldTime -= rewindspeed * Time.deltaTime;
+        if (stoptime == true) worldTime *= 0;
     }
     public void StopTime()
     {
@@ -36,6 +38,7 @@ public class UinverseTime : MonoBehaviour
         normal = false;
         fastFoward = false;
         rewind = false;
+        stoptime = true;
         rewindspeed = 1;
         fastfowardspeed = 1;
         
@@ -45,6 +48,8 @@ public class UinverseTime : MonoBehaviour
         normal = false;
         fastFoward = true;
         rewind = false;
+        stoptime = false;
+
         rewindspeed = 1;
         fastfowardspeed += 2;
     }
@@ -55,6 +60,8 @@ public class UinverseTime : MonoBehaviour
         rewind = false;
         rewindspeed = 1;
         fastfowardspeed = 1;
+        stoptime = false;
+
     }
     public void Rewind()
     {
@@ -62,6 +69,8 @@ public class UinverseTime : MonoBehaviour
         normal = false;
         fastFoward = false;
         rewind = true;
+        stoptime = false;
+
         fastfowardspeed = 1;
         rewindspeed +=  2;
     }
