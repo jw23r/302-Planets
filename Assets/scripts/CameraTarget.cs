@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LerpMe : MonoBehaviour
+public class CameraTarget : MonoBehaviour
 {
 
     // Start is called before the first frame update

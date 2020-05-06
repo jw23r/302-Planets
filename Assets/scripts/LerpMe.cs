@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraTarget : MonoBehaviour
+public class LerpMe : MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -21,11 +21,14 @@ public class CameraTarget : MonoBehaviour
     public Transform mars;
     public Transform earth;
     public Transform sun;
-    
+    public Transform saturn;
+    public Transform uranus;
+    public Transform neptune;
+
     public float percent = 0.7f;
     bool isPlayingFoward = true;
     public AnimationCurve curve;
-
+    public float chase;
     public float animationTime = 2;
     float animationTimeCurrent = 0;
     Vector3 currentEaseTarget;
@@ -82,12 +85,15 @@ animationTimeCurrent += Time.deltaTime;
         if (Rotator.marsTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, mars.position, p);
         if (Rotator.venusTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, venus.position, p);
         if (Rotator.sunTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, sun.position, p);
-        if (Rotator.earthMoon3Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, earthMoon3.position, p);
+        if (Rotator.saturnTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, saturn.position, p);
+        if (Rotator.uranusTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, uranus.position, p);
+        if (Rotator.neptuneTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, neptune.position, p);
 
+        
 
 
         //ease twoard target
-        transform.position = AnimiMath.Dampen(transform.position,currentEaseTarget, .05f);
+        transform.position = AnimiMath.Dampen(transform.position,currentEaseTarget, .005f);
         //transform.position +=()
     }
     void OnDrawGizmos()
