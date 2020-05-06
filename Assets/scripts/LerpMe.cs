@@ -71,25 +71,20 @@ animationTimeCurrent += Time.deltaTime;
         // transform.position = AnimiMath.Lerp(postionA.position, postionB.position, percent);
        float p = curve.Evaluate(percent);
         //find target postion
-      if(Rotator.earthMoon1Target == true)  currentEaseTarget = AnimiMath.Lerp(galxay.position, earthMoon1.position, p);
-        if (Rotator.galexyTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, galxay.position, p);
-        if (Rotator.earthMoon2Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, earthMoon2.position, p);
-        if (Rotator.earthMoon3Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, earthMoon3.position, p);
-        if (Rotator.mecuryMoonTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, mecuryMoon.position, p);
-        if (Rotator.mercuryTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, mercury.position, p);
-        if (Rotator.juiptiorMoon1Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, juiptiorMoon1.position, p);
-        if (Rotator.juiptiorMoon2Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, juiptiorMoon2.position, p);
-        if (Rotator.juiptiorMoon3Target == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, juiptiorMoon3.position, p);
-        if (Rotator.juiptiorTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, juiptior.position, p);
-        if (Rotator.marsMoonTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, marsMoon.position, p);
-        if (Rotator.marsTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, mars.position, p);
-        if (Rotator.venusTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, venus.position, p);
-        if (Rotator.sunTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, sun.position, p);
-        if (Rotator.saturnTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, saturn.position, p);
-        if (Rotator.uranusTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, uranus.position, p);
-        if (Rotator.neptuneTarget == true) currentEaseTarget = AnimiMath.Lerp(galxay.position, neptune.position, p);
 
-        
+        if (Rotator.galexyTarget == true) currentEaseTarget = galxay.position;
+        if (Rotator.mercuryTarget == true) currentEaseTarget =  mercury.position;
+        if (Rotator.juiptiorTarget == true) currentEaseTarget = juiptior.position;
+        if (Rotator.marsTarget == true) currentEaseTarget = mars.position;
+        if (Rotator.venusTarget == true) currentEaseTarget = venus.position;
+        if (Rotator.sunTarget == true) currentEaseTarget = sun.position;
+        if (Rotator.saturnTarget == true) currentEaseTarget = saturn.position;
+        if (Rotator.uranusTarget == true) currentEaseTarget = uranus.position;
+        if (Rotator.neptuneTarget == true) currentEaseTarget = neptune.position;
+        if (Rotator.earthTarget == true) currentEaseTarget = earth.position;
+
+
+
 
 
         //ease twoard target
