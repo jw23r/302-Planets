@@ -58,7 +58,7 @@ animationTimeCurrent += Time.deltaTime;
         currentEaseTarget = AnimiMath.Lerp(postionA.position, postionB.position, p);
 
         //ease twoard target
-        transform.position = AnimiMath.Dampen(transform.position,currentEaseTarget, .05f);
+        transform.position = currentEaseTarget;
         //transform.position +=()
     }
     void OnDrawGizmos()

@@ -34,7 +34,7 @@ public class UinverseTime : MonoBehaviour
     }
     public void StopTime()
     {
-        if (fastfowardspeed > 16) fastfowardspeed = 16;
+       
         normal = false;
         fastFoward = false;
         rewind = false;
@@ -65,7 +65,7 @@ public class UinverseTime : MonoBehaviour
     }
     public void Rewind()
     {
-        if (rewindspeed > 16) rewindspeed = 16;
+        
         normal = false;
         fastFoward = false;
         rewind = true;

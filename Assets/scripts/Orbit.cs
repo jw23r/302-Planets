@@ -7,8 +7,8 @@ public class Orbit : MonoBehaviour
 {
     public Transform orbitCenter;
     public LineRenderer orbitPath;
-    [Range(1, 500)] public float radius = 6;
-    [Range(4, 32)] public int resolution = 8;
+    [Range(10000, 970000)] public float radius = 6;
+    [Range(4, 48)] public int resolution = 8;
     public float planetSpeed = 1;
     
     // Start is called before the first frame update

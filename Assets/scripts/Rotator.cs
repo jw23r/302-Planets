@@ -60,7 +60,7 @@ public class Rotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CurrentCameraTarget();
+      //  CurrentCameraTarget();
     }
 
     
@@ -148,7 +148,7 @@ public class Rotator : MonoBehaviour
         marsMoonTarget = false;
         mercuryTarget = false;
         juiptiorTarget = false;
-        venusTarget = false;
+        venusTarget = true;
         marsTarget = false;
         earthTarget = false;
         sunTarget = false;
