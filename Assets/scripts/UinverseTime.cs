@@ -21,7 +21,7 @@ public class UinverseTime : MonoBehaviour
     void Update()
     {
         WTime();
-        print(worldTime);
+       // print(worldTime);
     }
 
     public void WTime()
