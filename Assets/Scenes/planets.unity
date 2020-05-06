@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roatation: {x: 1, y: 1, z: 1}
-  startAngle: 0
+  startAngle: 0.1
 --- !u!1 &185941529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,8 +1274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!4 &322966449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3005355226727304080, guid: 0fb64b12eb164d8429941ed8fdd0df55,
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 414408362}
-  radius: 100
+  radius: 237
   resolution: 32
   planetSpeed: 1.3
 --- !u!120 &414408362
@@ -1816,8 +1816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &417543777 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8267916958702141262, guid: 772e87c97ba1b3c4cba258f2be2df8c5,
@@ -2318,7 +2318,7 @@ Canvas:
   m_GameObject: {fileID: 760127774}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 840554769}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -2698,8 +2698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &828662743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2870,7 @@ GameObject:
   - component: {fileID: 840554768}
   - component: {fileID: 840554772}
   - component: {fileID: 840554771}
+  - component: {fileID: 840554773}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2949,29 +2950,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840554767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e93c2c2e29498ba4ab2a4bde3dde7d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  galxay: {fileID: 458155276}
-  earthMoon1: {fileID: 794730641}
-  earthMoon2: {fileID: 2059495247}
-  earthMoon3: {fileID: 303813797}
-  mecuryMoon: {fileID: 1189967160}
-  juiptiorMoon1: {fileID: 981361175}
-  juiptiorMoon2: {fileID: 1127826132}
-  juiptiorMoon3: {fileID: 1077716704}
-  marsMoon: {fileID: 1501336063}
-  mercury: {fileID: 184494730}
-  juiptior: {fileID: 946122263}
-  venus: {fileID: 1370075967}
-  mars: {fileID: 1493854680}
-  earth: {fileID: 414408366}
-  sun: {fileID: 912785085}
-  saturn: {fileID: 1502750620}
-  uranus: {fileID: 1142447800}
-  neptune: {fileID: 115564182}
+  postionA: {fileID: 458155276}
+  postionB: {fileID: 912785085}
   percent: 1
   curve:
     serializedVersion: 2
@@ -2997,7 +2982,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  chase: 0
   animationTime: 2
 --- !u!114 &840554772
 MonoBehaviour:
@@ -3037,6 +3021,45 @@ MonoBehaviour:
   saturnFact: {fileID: 0}
   uranusFact: {fileID: 0}
   neptuneFact: {fileID: 0}
+--- !u!114 &840554773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840554767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c899a63074fae4744b9769753beed8ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  galxay: {fileID: 458155276}
+  earthMoon1: {fileID: 0}
+  earthMoon2: {fileID: 0}
+  earthMoon3: {fileID: 0}
+  mecuryMoon: {fileID: 0}
+  juiptiorMoon1: {fileID: 0}
+  juiptiorMoon2: {fileID: 0}
+  juiptiorMoon3: {fileID: 0}
+  marsMoon: {fileID: 0}
+  mercury: {fileID: 184494730}
+  juiptior: {fileID: 946122263}
+  venus: {fileID: 1370075967}
+  mars: {fileID: 1493854680}
+  earth: {fileID: 414408366}
+  sun: {fileID: 912785085}
+  saturn: {fileID: 1502750620}
+  uranus: {fileID: 1142447800}
+  neptune: {fileID: 115564182}
+  percent: 1
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  chase: 0
+  animationTime: 2
 --- !u!4 &912785085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8267916958702141256, guid: 772e87c97ba1b3c4cba258f2be2df8c5,
@@ -3079,7 +3102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 946122259}
-  radius: 160
+  radius: 336
   resolution: 32
   planetSpeed: 0.5
 --- !u!120 &946122259
@@ -3263,8 +3286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &954852859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,8 +3580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &993283582
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,8 +4116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1081683803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4387,8 +4410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1142447796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,7 +4521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1142447802}
-  radius: 6
+  radius: 450
   resolution: 8
   planetSpeed: 1
 --- !u!120 &1142447802
@@ -4609,8 +4632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1189967154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,8 +4854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1293349894
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,7 +5121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1370075963}
-  radius: 50
+  radius: 188
   resolution: 32
   planetSpeed: 1.5
 --- !u!120 &1370075963
@@ -5282,8 +5305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1378049795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5477,7 +5500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1493854676}
-  radius: 120
+  radius: 266
   resolution: 32
   planetSpeed: 0.8
 --- !u!120 &1493854676
@@ -5661,8 +5684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1501336057
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,8 +5906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1502750616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,7 +6017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1502750622}
-  radius: 6
+  radius: 439
   resolution: 8
   planetSpeed: 1
 --- !u!120 &1502750622
@@ -6105,8 +6128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: 1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &1537759975
 GameObject:
   m_ObjectHideFlags: 0
@@ -6671,17 +6694,17 @@ PrefabInstance:
     - target: {fileID: 3005355226727304080, guid: 0fb64b12eb164d8429941ed8fdd0df55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 681.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3005355226727304080, guid: 0fb64b12eb164d8429941ed8fdd0df55,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -895.9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3005355226727304080, guid: 0fb64b12eb164d8429941ed8fdd0df55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1443
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3005355226727304080, guid: 0fb64b12eb164d8429941ed8fdd0df55,
         type: 3}
@@ -7233,8 +7256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35f02d6eb3d5aae4789a6bb203a6efe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roatation: {x: 0, y: 0, z: 0}
-  startAngle: 0
+  roatation: {x: -1, y: 1, z: 1}
+  startAngle: 0.1
 --- !u!1 &2069807102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7604,5 +7627,25 @@ PrefabInstance:
       propertyPath: orbitCenter
       value: 
       objectReference: {fileID: 912785085}
+    - target: {fileID: 8694597150303420887, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: roatation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694597150303420887, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: roatation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694597150303420887, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: roatation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694597150303420887, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: startAngle
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe083ca357143c4ab83f6bf46f49050, type: 3}
