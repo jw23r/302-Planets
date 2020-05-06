@@ -550,7 +550,7 @@ MonoBehaviour:
   orbitPath: {fileID: 184494726}
   radius: 256
   resolution: 32
-  planetSpeed: 2
+  planetSpeed: 0.2
 --- !u!120 &184494726
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1632,9 +1632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 414408362}
-  radius: 237
+  radius: 330
   resolution: 32
-  planetSpeed: 1.3
+  planetSpeed: 0.2
 --- !u!120 &414408362
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3102,9 +3102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 946122259}
-  radius: 336
+  radius: 390
   resolution: 32
-  planetSpeed: 0.5
+  planetSpeed: 0.2
 --- !u!120 &946122259
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4523,7 +4523,7 @@ MonoBehaviour:
   orbitPath: {fileID: 1142447802}
   radius: 450
   resolution: 8
-  planetSpeed: 1
+  planetSpeed: 0.01
 --- !u!120 &1142447802
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5121,9 +5121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1370075963}
-  radius: 188
+  radius: 300
   resolution: 32
-  planetSpeed: 1.5
+  planetSpeed: 0.1
 --- !u!120 &1370075963
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5500,9 +5500,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1493854676}
-  radius: 266
+  radius: 360
   resolution: 32
-  planetSpeed: 0.8
+  planetSpeed: 0.2
 --- !u!120 &1493854676
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6019,7 +6019,7 @@ MonoBehaviour:
   orbitPath: {fileID: 1502750622}
   radius: 439
   resolution: 8
-  planetSpeed: 1
+  planetSpeed: 0.01
 --- !u!120 &1502750622
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7627,6 +7627,16 @@ PrefabInstance:
       propertyPath: orbitCenter
       value: 
       objectReference: {fileID: 912785085}
+    - target: {fileID: 8694597150303420889, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: radius
+      value: 470
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694597150303420889, guid: efe083ca357143c4ab83f6bf46f49050,
+        type: 3}
+      propertyPath: planetSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8694597150303420887, guid: efe083ca357143c4ab83f6bf46f49050,
         type: 3}
       propertyPath: roatation.x
