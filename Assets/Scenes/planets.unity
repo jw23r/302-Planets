@@ -546,11 +546,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 184494726}
   radius: 256
   resolution: 48
   planetSpeed: 0.9
+  planet: 1
 --- !u!120 &184494726
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1088,11 +1090,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 2.5
   orbitCenter: {fileID: 414408366}
   orbitPath: {fileID: 303813793}
   radius: 9
   resolution: 48
   planetSpeed: 0.2
+  planet: 0
 --- !u!120 &303813793
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1630,11 +1634,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 414408362}
   radius: 330
   resolution: 48
   planetSpeed: 0.09
+  planet: 1
 --- !u!120 &414408362
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2512,11 +2518,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1
   orbitCenter: {fileID: 414408366}
   orbitPath: {fileID: 794730637}
   radius: 8
   resolution: 48
   planetSpeed: 1
+  planet: 0
 --- !u!120 &794730637
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3101,11 +3109,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 946122259}
   radius: 390
   resolution: 48
   planetSpeed: 0.009
+  planet: 1
 --- !u!120 &946122259
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3395,11 +3405,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1
   orbitCenter: {fileID: 946122263}
   orbitPath: {fileID: 981361171}
-  radius: 14
+  radius: 10000
   resolution: 48
   planetSpeed: 0.3
+  planet: 0
 --- !u!120 &981361171
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3931,11 +3943,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1
   orbitCenter: {fileID: 946122263}
   orbitPath: {fileID: 1077716700}
-  radius: 20
+  radius: 10000
   resolution: 48
   planetSpeed: 0.5
+  planet: 0
 --- !u!120 &1077716700
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4225,11 +4239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1
   orbitCenter: {fileID: 946122263}
   orbitPath: {fileID: 1127826128}
-  radius: 15
+  radius: 10000
   resolution: 48
   planetSpeed: 0.1
+  planet: 0
 --- !u!120 &1127826128
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4520,11 +4536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1142447802}
   radius: 450
   resolution: 48
   planetSpeed: 0.001
+  planet: 1
 --- !u!120 &1142447802
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4669,11 +4687,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1.3
   orbitCenter: {fileID: 184494730}
   orbitPath: {fileID: 1189967156}
   radius: 8
   resolution: 48
   planetSpeed: 1
+  planet: 0
 --- !u!120 &1189967156
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5120,11 +5140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1370075963}
   radius: 300
   resolution: 48
   planetSpeed: 0.4
+  planet: 1
 --- !u!120 &1370075963
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5499,11 +5521,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1493854676}
   radius: 360
   resolution: 48
   planetSpeed: 0.04
+  planet: 1
 --- !u!120 &1493854676
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5721,11 +5745,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 1
   orbitCenter: {fileID: 1493854680}
   orbitPath: {fileID: 1501336059}
-  radius: 8
+  radius: 10000
   resolution: 48
   planetSpeed: 0.2
+  planet: 0
 --- !u!120 &1501336059
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -6016,11 +6042,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 0
   orbitCenter: {fileID: 912785085}
   orbitPath: {fileID: 1502750622}
   radius: 439
   resolution: 48
   planetSpeed: 0.004
+  planet: 1
 --- !u!120 &1502750622
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -7071,11 +7099,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3ad476cc45e7843990d0c3d6f51cd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unCoplaner: 2
   orbitCenter: {fileID: 414408366}
   orbitPath: {fileID: 2059495243}
   radius: 10
   resolution: 48
   planetSpeed: 0.5
+  planet: 0
 --- !u!120 &2059495243
 LineRenderer:
   m_ObjectHideFlags: 0
